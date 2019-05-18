@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header aside {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+header p {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+header button {
+    width: 200px;
+    height: 50px;
+}
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* main web development */
+
+main section.dev div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+main section div.devprojects {
+    display: flex;
+}
+
+main section div.devprojects div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+/* main digital */
+
+main section.digital {
+    display: flex;
+    flex-direction: column;
+}
+
+main section.digital div.icons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+main section.digital div.digiprojects {
+    display: flex;
+    flex-direction: column;
+}
+
+main section.digital div.digiprojects section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section.digital div.digiprojects section p {
+    display: flex;
+    flex-basis: 70%;
+}
+
+main section.digital div.digiprojects section div {
+    display: flex;
+    width: 20%;
+}
+
+/* main photohraphy */
+
+main section.photo {
+    display: flex;
+    flex-direction: column;
+}
+
+main section.photo div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-basis: 65%;
+}
+
+main section.photo div:nth-child(2) {
+    display: flex;
+    flex-basis: 35%;
+}
