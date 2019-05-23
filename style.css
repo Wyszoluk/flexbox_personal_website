@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -9,6 +10,33 @@ body {
     width: 70vw;
     max-width: 1920px;
     margin: 0 auto;
+    background-image: background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    background-blend-mode: normal;
+    animation: background 240s infinite linear;
+}
+
+@keyframes background {
+    20% {
+        background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%); 
+    }
+
+    40% {
+        background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    }
+
+    60% {
+        background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
+        background-blend-mode: normal,color-burn;
+    }
+
+    80% {
+        background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
+        background-blend-mode: normal,color-burn;
+    }
+
+    100% {
+        background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+    }
 }
 
 /* header */
@@ -16,34 +44,56 @@ body {
 header {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    align-items: center;
 }
 
 header aside {
     display: flex;
-    justify-content: flex-end;
+    font-size: 40px;
+    padding: 30px;
+    align-self: flex-end;
 }
+
+header aside a {
+    display: block;
+    padding: 0 10px;
+    color: black;
+}
+
 
 header h1 {
     display: flex;
-    justify-content: center;
-    align-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    padding: 200px 0 100px 0;
 }
 
 header p {
     display: flex;
     justify-content: center;
     align-content: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
 }
 
 header div {
     display: flex;
     justify-content: center;
     align-content: center;
+    font-size: 70px;
+    padding: 50px 30px 30px 30px;
 }
 
+
 header button {
-    width: 200px;
+    width: 50px;
     height: 50px;
+    background-color: transparent;
+    border-style: none;
+    border: solid black 1px;
+    margin: 200px 0 0 0;
+    border-radius: 30%;
 }
 
 /* main */
@@ -55,69 +105,492 @@ main {
 
 /* main web development */
 
-main section.dev div:nth-child(1) {
+main section.dev {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+
+
+
+/* html css icons */
+
+main section.dev div.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 10vh;
+}
+
+main section.dev div.icons i {
+    padding: 0 20px /*30px*/;
+    font-size: 70px;
+}
+
+
+
+
+
+
+
+/* development projects description */
+
+main section.dev div.devprojects {
+    display: flex;
+    flex-basis: 85vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+}
+
+
+
+
+
+
+main section.dev div.devprojects div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    padding: 0 0 0 10%;
+}
+
+main section.dev div.devprojects div:nth-child(1) h2 {
+    font-size: 100px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-bottom: 50px;
+}
+
+main section.dev div.devprojects div:nth-child(1) p {
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+/* image */
+
+main section.dev div.devprojects div.iphonebox {
+    flex-basis: 40%;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-main section div.devprojects {
-    display: flex;
+main section.dev div.devprojects div.iphonebox img {
+    display: block;
+    width: auto;
+    height: 400px;
+    /*padding-top: 80px;
+    padding-left: 300px;*/
 }
 
-main section div.devprojects div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* main digital */
 
 main section.digital {
     display: flex;
     flex-direction: column;
+    flex-basis: 95vh;
+    margin-top: 100px;
+
 }
+
+
+/*  digital icons */
 
 main section.digital div.icons {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    flex-basis: 10vh;
 }
+
+main section.digital div.icons i {
+    padding: 0 15px;
+}
+
+main section.digital div.icons i.fa-facebook-f,i.fa-google {
+    font-size: 60px;
+}
+
+main section.digital div.icons i.fa-instagram {
+    font-size: 73px;
+    transform: translatey(1.5px);
+}
+
+
+
+
+
+
+
+/* digital projects description */
+
+/*
 
 main section.digital div.digiprojects {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    flex-basis: 85vh;
+    background-color: #ccc;
 }
 
 main section.digital div.digiprojects section {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-basis: 20vh;
+    justify-content: center;
 }
 
-main section.digital div.digiprojects section p {
-    display: flex;
-    flex-basis: 70%;
+main section.digital div.digiprojects section:nth-child(2) {
+    flex-direction: row-reverse;
 }
 
 main section.digital div.digiprojects section div {
     display: flex;
-    width: 20%;
+    justify-content: center;
+    align-items: center;
 }
+
+main section.digital div.digiprojects section div:nth-child(1) {
+    flex-basis: 60%;
+}
+
+main section.digital div.digiprojects section div:nth-child(2) {
+    flex-basis: 40%;
+}
+
+main section.digital div.digiprojects section div p {
+    font-size: 22px;
+    padding: 0 5vw;
+}
+
+main section.digital div.digiprojects section div i {
+    font-size: 200px;
+}
+
+main section.digital div.digiprojects aside {
+    display: flex;
+    font-size: 22px;
+    padding: 0 5vw;
+}
+
+*/
+
+/* digital alternate */
+
+
+main section.digitalalternate {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-basis: 85vh;
+}
+
+/* digital alternate icons */
+
+main section.digitalalternate div.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 10vh;
+}
+
+main section.digitalalternate div.icons i {
+    padding: 0 15px;
+}
+
+main section.digitalalternate div.icons i.fa-facebook-f,i.fa-google {
+    font-size: 60px;
+}
+
+main section.digitalalternate div.icons i.fa-instagram {
+    font-size: 73px;
+    transform: translatey(1.5px);
+}
+
+/* digital alternate description */
+
+main section.digitalalternate div.digiprojects {
+    display: flex;
+    height: 75vh;
+    margin-top: 19vh;
+}
+
+main section.digitalalternate div.digiprojects section {
+    flex-basis: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section.digitalalternate div.digiprojects section div {
+    width: 80%;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    line-height: 33px;
+    display: flex;
+    flex-direction: column;
+}
+
+main section.digitalalternate div.digiprojects section:nth-child(1) {
+    justify-content: flex-start;
+}
+
+main section.digitalalternate div.digiprojects section:nth-child(2) {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+}
+
+
+main section.digitalalternate div.digiprojects section div:nth-child(2) {
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+main section.digitalalternate div.digiprojects section div p {
+    margin-bottom: 10px;
+}
+
+main section.digitalalternate div.digiprojects section div i {
+    font-size: 200px;
+}
+
+
+main section.digitalalternate div.digiprojects aside {
+    flex-basis: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid blue 5px;
+}
+
+main section.digitalalternate div.digiprojects aside div {
+    width: 80%;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    line-height: 33px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+main section.digital div.digiprojects section:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+main section.digital div.digiprojects section p {
+    display: flex;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    line-height: 28px;
+    padding-bottom: 10px;
+}
+
+main section.digital div.digiprojects section:nth-child(2) div:nth-child(1) {
+    justify-content: flex-end;
+}
+
+
+
+
+main section.digital div.digiprojects section div:nth-child(2) {
+    justify-content: flex-end;
+}
+
+main section.digital div.digiprojects section div.hearticon {
+    justify-content: flex-start;
+}
+
+
+main section.digital div.digiprojects div i {
+    font-size: 200px;
+}
+
+main section.digital div.digiprojects p {
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    line-height: 28px;
+    flex-basis: 70%;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* main photohraphy */
 
 main section.photo {
     display: flex;
     flex-direction: column;
+    height: 95vh;
+    margin-top: 300px;
+    margin-bottom: 35vh;
 }
 
 main section.photo div:nth-child(1) {
+    flex-basis: 10vh;
     display: flex;
     justify-content: center;
-    align-content: center;
-    flex-basis: 65%;
+    align-items: center;
 }
 
-main section.photo div:nth-child(2) {
+main section.photo div:nth-child(1) i {
+    padding: 0 15px;
+    font-size: 70px;
+}
+
+
+
+main section.photo div.gallery {
+    flex-basis: 80vh;
     display: flex;
+    flex-direction: column;
+    margin-top: 19vh;
+    justify-content: space-between;
+}
+
+main section.photo div.gallery section {
+    display: flex;
+    flex-basis: 35vh;
+}
+
+main section.photo div.gallery section:nth-child(1) {
+    justify-content: space-between;
+    margin-bottom: 5vh;
+}
+
+main section.photo div.gallery section div {
+    display: flex;
+}
+
+main section.photo div.gallery section:nth-child(1) div:nth-child(1) {
+    flex-basis: 54%;
+    background-color: rgb(93, 180, 50);
+    background-image: url(images/img/IMG_5421.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main section.photo div.gallery section:nth-child(1) div:nth-child(2) {
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    line-height: 33px;
+    flex-basis: 40%;
+    align-items: center;
+    justify-content: center;
+    background-color: #aaa;
+}
+
+main section.photo div.gallery section:nth-child(1) div:nth-child(2) p {
+    flex-basis: 70%;
+}
+
+
+main section.photo div.gallery section:nth-child(2) {
+    justify-content: space-between;
+}
+
+main section.photo div.gallery section:nth-child(2) div:nth-child(1) {
+    flex-basis: 20%;
+    height: 30vh;
+    background-color: rgb(88, 92, 150);
+    background-image: url(images/img/IMG_7328.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main section.photo div.gallery section:nth-child(2) div:nth-child(2) {
     flex-basis: 35%;
+    height: 30vh;
+    background-color: rgb(207, 125, 183);
+    background-image: url(images/img/12.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main section.photo div.gallery section:nth-child(2) div:nth-child(3) {
+    flex-basis: 35%;
+    height: 30vh;
+    background-color: rgb(129, 121, 82);
+    background-image: url(images/img/IMG_6734.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-basis: 5vh;
+}
+
+footer p {
+    margin: 0 auto;
+    line-height: 5vh;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 30px;
 }
