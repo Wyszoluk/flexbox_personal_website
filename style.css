@@ -82,7 +82,7 @@ header div {
     justify-content: center;
     align-content: center;
     font-size: 70px;
-    padding: 50px 30px 30px 30px;
+    padding: 50px 30px 0px 30px;
 }
 
 
@@ -91,10 +91,22 @@ header button {
     height: 50px;
     background-color: transparent;
     border-style: none;
-    border: solid black 1px;
+    border: solid transparent 1px;
     margin: 200px 0 0 0;
-    border-radius: 30%;
+    opacity: 0.5;
 }
+
+header button i {
+    font-size: 50px;
+}
+
+header button:hover {
+    opacity: 1;
+}
+
+
+
+
 
 /* main */
 
@@ -109,8 +121,7 @@ main section.dev {
     display: flex;
     flex-direction: column;
     height: 95vh;
-    padding-top: 100px;
-    justify-content: center;
+    padding-top: 15vh;
 }
 
 
@@ -140,10 +151,10 @@ main section.dev div.icons i {
 
 main section.dev div.devprojects {
     display: flex;
-    flex-basis: 85vh;
-    align-items: center;
+    flex-basis: 45vh;
+    align-items: flex-start;
     justify-content: center;
-    margin-top: -100px;
+    margin-top: 19vh;
 }
 
 
@@ -207,8 +218,8 @@ main section.dev div.devprojects div.iphonebox img {
 main section.digital {
     display: flex;
     flex-direction: column;
-    flex-basis: 95vh;
-    margin-top: 100px;
+    flex-basis: 115vh;
+    margin-top: 0px;
 
 }
 
@@ -393,6 +404,26 @@ main section.digitalalternate div.digiprojects aside div {
     line-height: 33px;
 }
 
+main section.digitalalternate div.digiprojects aside div p {
+    margin-bottom: 10px;
+}
+
+main section.digitalalternate div.digiprojects aside div p:nth-child(2)::after {
+    content: "|";
+    opacity: 1;
+    animation: symbol 1s infinite steps(2);
+} 
+
+@keyframes symbol {
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
+
 
 
 
@@ -504,7 +535,7 @@ main section.photo div.gallery {
     flex-basis: 80vh;
     display: flex;
     flex-direction: column;
-    margin-top: 19vh;
+    margin-top: 21vh;
     justify-content: space-between;
 }
 
@@ -540,6 +571,7 @@ main section.photo div.gallery section:nth-child(1) div:nth-child(2) {
     justify-content: center;
     background-color: #aaa;
 }
+
 
 main section.photo div.gallery section:nth-child(1) div:nth-child(2) p {
     flex-basis: 70%;
