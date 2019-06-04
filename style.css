@@ -215,18 +215,17 @@ main section.dev div.devprojects div.iphonebox img {
 
 /* main digital */
 
-main section.digital {
+/*main section.digital {
     display: flex;
     flex-direction: column;
     flex-basis: 115vh;
     margin-top: 0px;
-
-}
+}*/
 
 
 /*  digital icons */
 
-main section.digital div.icons {
+/*main section.digital div.icons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,7 +244,7 @@ main section.digital div.icons i.fa-facebook-f,i.fa-google {
 main section.digital div.icons i.fa-instagram {
     font-size: 73px;
     transform: translatey(1.5px);
-}
+}*/
 
 
 

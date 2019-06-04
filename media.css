@@ -20,6 +20,7 @@
     main section.dev {
         height: 125vh;
     }
+    
 
     main section.digitalalternate div.digiprojects {
         height: 145vh;
@@ -89,8 +90,30 @@
         flex-basis: 20%;
         background-image: url(images/img/IMG_6734.JPG);
     }
+}
 
-    
+@media (max-width: 700px) {
+    main section.digitalalternate {
+        flex-basis: 485vh;
+    }
+
+    main section.digitalalternate div.digiprojects {
+        height: 465vh;
+    }
+
+    main section.digitalalternate div.digiprojects section:nth-of-type(1) {
+        flex-basis: 29.33%;
+    }
+
+    main section.digitalalternate div.digiprojects section:nth-of-type(2) {
+        flex-basis: 37.33%;
+    }
+
+    main section.photo {
+        margin-top: 70vh;
+        margin-bottom: 35vh;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -111,8 +134,16 @@
         margin-top: 19vh;
     }
 
+    main section.digitalalternate {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-basis: 485vh;
+        margin-top: 20vh;
+    }
+
     main section.digitalalternate div.digiprojects {
-        height: 265vh;
+        height: 330vh;
     }
 
     main section.digitalalternate div.digiprojects section:nth-of-type(1) {
@@ -123,4 +154,88 @@
         flex-basis: 37.33%;
     }
 
+    main section.photo {
+        margin-top: 90vh;
+        margin-bottom: 35vh;
+    }
+}
+
+@media (max-width: 500px) {
+    main section.photo {
+        margin-top: 140vh;
+    }
+}
+
+@media (max-width: 400px) {
+    main section.photo {
+        margin-top: 190vh;
+    }
+}
+
+@media (max-width: 320px) {
+    main section.photo {
+        margin-top: 230vh;
+    }
+}
+
+
+
+
+
+
+
+@media (max-height: 900px) {
+
+    header {
+        height: 200vh;
+    }
+
+    main section.dev {
+        height: 140vh;
+        padding-top: 25vh;
+    }
     
+    main section.dev div.devprojects {
+        flex-basis: 70vh;
+        margin-top: 28vh;
+    }
+
+
+    main section.digital {
+        flex-basis: 215vh;
+    }
+
+    main section.digital div.icons {
+        margin-bottom: 80px;
+        flex-basis: 20vh;
+    }
+
+    main section.digitalalternate {
+        flex-basis: 190vh;
+    }
+
+    main section.digitalalternate div.digiprojects {
+        height: 150vh;
+        margin-top: 30vh;
+    }
+}
+
+@media (max-height: 700px) {
+    main section.digital {
+        flex-basis: 300vh;
+    }
+
+    main section.digital div.icons {
+        margin-bottom: 80px;
+        flex-basis: 30vh;
+    }
+
+    main section.digitalalternate {
+        flex-basis: 460vh;
+    }
+
+    main section.digitalalternate div.digiprojects {
+        height: 320vh;
+        margin-top: 40vh;
+    }
+}
