@@ -28,7 +28,7 @@
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
     main section.digitalalternate div.digiprojects {
         display: flex;
         height: 225vh;
@@ -91,6 +91,9 @@
         background-image: url(images/img/IMG_6734.JPG);
     }
 }
+
+
+
 
 @media (max-width: 700px) {
     main section.digitalalternate {
@@ -160,6 +163,92 @@
     }
 }
 
+@media (max-width: 600px) and (orientation: portrait) {
+    header h1 {
+        font-size: 35px;
+        padding: 200px 0 100px 0;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    header div {
+        font-size: 35px;
+        padding: 50px 30px 0px 30px;
+    }
+
+    header button i {
+        font-size: 25px;
+    }
+    
+
+    main section.dev {
+        padding-top: 55vh;
+    }
+
+    main section.dev div.icons i {
+        padding: 0 20px;
+        font-size: 35px;
+    }
+
+    main section.dev div.devprojects div:nth-child(1) h2 {
+        font-size: 50px;
+        padding-bottom: 50px;
+    }
+
+    main section.dev div.devprojects div:nth-child(1) p {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+
+    main section.digitalalternate {
+        margin-top: 90vh;
+    }
+
+    main section.digitalalternate div.icons i.fa-facebook-f,i.fa-google {
+        font-size: 30px;
+    }
+
+    main section.digitalalternate div.icons i.fa-instagram {
+        font-size: 36.5px;
+        transform: translatey(1.5px);
+    }
+
+    main section.digitalalternate div.digiprojects section div {
+        width: 80%;
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        line-height: 22px;
+    }
+
+    main section.digitalalternate div.digiprojects section div i {
+        font-size: 100px;
+    }
+
+    main section.digitalalternate div.digiprojects aside div {
+        width: 80%;
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        line-height: 22px;
+    }
+
+    main section.photo div:nth-child(1) i {
+        padding: 0 15px;
+        font-size: 35px;
+    }
+
+    main section.photo div.gallery section:nth-child(1) div:nth-child(2) {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        line-height: 11px;
+        flex-basis: 40%;
+    }
+}
+}
+
 @media (max-width: 500px) {
     main section.photo {
         margin-top: 140vh;
@@ -200,12 +289,7 @@
         margin-top: 28vh;
     }
 
-
-    main section.digital {
-        flex-basis: 215vh;
-    }
-
-    main section.digital div.icons {
+    main section.digitalalternate div.icons {
         margin-bottom: 80px;
         flex-basis: 20vh;
     }
@@ -221,14 +305,6 @@
 }
 
 @media (max-height: 700px) {
-    main section.digital {
-        flex-basis: 300vh;
-    }
-
-    main section.digital div.icons {
-        margin-bottom: 80px;
-        flex-basis: 30vh;
-    }
 
     main section.digitalalternate {
         flex-basis: 460vh;
@@ -239,3 +315,172 @@
         margin-top: 40vh;
     }
 }
+
+@media (max-width: 820px) and (max-height: 650px) {
+    main section.digitalalternate {
+        flex-basis: 485vh;
+        margin-top: 50vh;
+    }
+
+    main section.digitalalternate div.digiprojects {
+        height: 465vh;
+    }
+
+    main section.photo {
+        margin-top: 140vh;
+    }
+}
+
+
+@media (max-height: 900px) and (max-width: 400px) {
+
+    header {
+        height: 140vh;
+    }
+
+    main section.dev {
+        height: 140vh;
+        padding-top: 15vh;
+    }
+}
+
+@media (max-height: 700px) and (max-width: 400px) {
+
+    header {
+        height: 140vh;
+    }
+
+    main section.dev {
+        height: 170vh;
+        padding-top: 35vh;
+    }
+
+    main section.dev div.icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 10vh;
+        margin-bottom: 140px;
+    }
+}
+
+
+
+
+@media (max-width: 820px) and (max-height: 520px) {
+    header h1 {
+        font-size: 35px;
+        padding: 200px 0 100px 0;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    header div {
+        font-size: 35px;
+        padding: 50px 30px 0px 30px;
+    }
+
+    header button i {
+        font-size: 25px;
+    }
+    
+
+    main section.dev {
+        padding-top: 55vh;
+    }
+
+    main section.dev div.icons i {
+        padding: 0 20px;
+        font-size: 35px;
+    }
+
+    main section.dev div.devprojects div:nth-child(1) h2 {
+        font-size: 50px;
+        padding-bottom: 50px;
+    }
+
+    main section.dev div.devprojects div:nth-child(1) p {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+
+    main section.digitalalternate {
+        margin-top: 90vh;
+    }
+
+    main section.digitalalternate div.icons i.fa-facebook-f,i.fa-google {
+        font-size: 30px;
+    }
+
+    main section.digitalalternate div.icons i.fa-instagram {
+        font-size: 36.5px;
+        transform: translatey(1.5px);
+    }
+
+    main section.digitalalternate div.digiprojects section div {
+        width: 80%;
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        line-height: 22px;
+    }
+
+    main section.digitalalternate div.digiprojects section div i {
+        font-size: 100px;
+    }
+
+    main section.digitalalternate div.digiprojects aside div {
+        width: 80%;
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        line-height: 22px;
+    }
+
+    main section.photo div:nth-child(1) i {
+        padding: 0 15px;
+        font-size: 35px;
+    }
+
+    main section.photo div.gallery section:nth-child(1) div:nth-child(2) {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        line-height: 11px;
+        flex-basis: 40%;
+    }
+}
+
+@media (max-width: 820px) and (max-height: 430px) {
+    main section.dev {
+        height: 140vh;
+        padding-top: 140vh;
+    }
+
+    main section.digitalalternate {
+        margin-top: 120vh;
+    }
+}
+
+@media (max-width: 820px) and (max-height: 330px) {
+    main section.dev {
+        padding-top: 190vh;
+    }
+
+    main section.digitalalternate {
+        margin-top: 170vh;
+    }
+}
+
+@media (max-width: 820px) and (max-height: 285px) {
+    main section.dev {
+        height: 140vh;
+        padding-top: 270vh;
+    }
+
+    main section.digitalalternate {
+        margin-top: 250vh;
+    }
+}
+
