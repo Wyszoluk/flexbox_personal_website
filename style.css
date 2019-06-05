@@ -555,7 +555,7 @@ main section.photo div.gallery section div {
 main section.photo div.gallery section:nth-child(1) div:nth-child(1) {
     flex-basis: 54%;
     background-color: rgb(93, 180, 50);
-    background-image: url(images/img/IMG_5421.JPG);
+    background-image: url("Images/img/IMG_5421.JPG");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -585,7 +585,7 @@ main section.photo div.gallery section:nth-child(2) div:nth-child(1) {
     flex-basis: 20%;
     height: 30vh;
     background-color: rgb(88, 92, 150);
-    background-image: url(images/img/IMG_7328.jpg);
+    background-image: url("Images/img/IMG_7328.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -595,7 +595,7 @@ main section.photo div.gallery section:nth-child(2) div:nth-child(2) {
     flex-basis: 35%;
     height: 30vh;
     background-color: rgb(207, 125, 183);
-    background-image: url(images/img/12.JPG);
+    background-image: url("images/img/12.JPG");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -605,7 +605,7 @@ main section.photo div.gallery section:nth-child(2) div:nth-child(3) {
     flex-basis: 35%;
     height: 30vh;
     background-color: rgb(129, 121, 82);
-    background-image: url(images/img/IMG_6734.JPG);
+    background-image: url("images/img/IMG_6734.JPG");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
